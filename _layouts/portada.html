@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+  <body>
+    <main>
+  
+      <section id="portada">
+          <div class="informacion">
+            <h1><a href="{{ site.baseurl }}/">Saúl Guardado</a></h1>
+            <p>Sistemas Operativos II</p>
+          </div>
+          <div class="bienvenida">
+            <p>Este sitio ha sido creado para la materia de Sistemas Operativos II, impartida en la Universidad Andrés Bello de Chalatenango.</p>
+            <p>En esta asignatura aprenderemos sobre el sistema operativo Linux. Por lo que pondremos a disposición de la comunidad los materiales, trabajos de los estudiantes, tutoriales de instalación de distribuciones Linux e invitaremos a todos a las conferencias de programación en lenguaje Python y Ruby que serán impartidas por estudiantes de esta asignatura.</p>
+          </div>
+        </section>
+        {{ content }}
+    </main>
+
+
+ <!--    {% include footer.html %} -->
+
+  </body>
+
+</html>

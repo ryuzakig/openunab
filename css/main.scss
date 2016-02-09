@@ -16,9 +16,6 @@ p{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 }
-main{
-	/*width: 100%;*/
-}
 main section{
 	display: block;
 	float: left;
@@ -33,48 +30,98 @@ section#portada{
 	background-size: cover;
 	height: 100vh;
 	position: relative;
+	.informacion{
+		position: absolute;
+		// top: 50%;
+	  	left: 50%;
+	  	transform: translate(-50%, 20%);
+		text-align: center;
+		height: 65%;
+		h1{
+			font-size: 3em;
+			text-transform: uppercase;
+		}
+	}
+	.bienvenida{
+		height: 35%;
+		background-color:#fff;
+		padding: 25px;
+		position: absolute;
+		bottom: 0;
+		text-align: center;
+		p{
+			padding: 15px;
+		}
+	}
 }
-section#portada .informacion{
-	position: absolute;
-	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-	text-align: center;
-}
-section#portada .informacion h1{
-	font-size: 3em;
-	text-transform: uppercase;
-}
+
 section#articulos{
 	height: 100vh;
 	overflow-y:scroll;
 	position: relative;
+	.lista-articulos{
+		padding: 50px 20px 0;
+		position: absolute;
+		z-index: 2;
+	}
 }
-section#articulos .lista-articulos{
-	padding: 50px 20px 0;
-	position: absolute;
-	z-index: 2;
-}
+
 .lista-articulos article{
 	padding: 20px;
 	margin-bottom: 10px;
+	h2{
+		text-transform: uppercase;
+		margin-bottom: 5px;
+		letter-spacing: -1px;
+	}
+	p{
+		margin-bottom: 5px;
+	}
+	a{
+		font-family: 'Open Sans', sans-serif;
+		text-decoration: none;
+		background-color: #33ff99;
+		padding: 10px;
+		display: inline-block;
+		color: #ff00ff;
+		font-size: 16px;
+	}
 }
-.lista-articulos article h2{
-	text-transform: uppercase;
-	margin-bottom: 5px;
-	letter-spacing: -1px;
+
+.arriba{
+	background-color: #FAFAFA;
+	padding: 20px;
+	a{
+		color:#869D9A;
+		font-size: 1em;
+		text-decoration: none;
+		font-family: 'Open Sans', sans-serif;
+	}
+	a:before{
+		content: "<<  ";
+		font-size: 12px;
+	}
 }
-.lista-articulos article p{
-	margin-bottom: 5px;
+.post{
+	width: 50vw;
+	margin: 0 auto;
+	text-align: center;
 }
-.lista-articulos article a{
-	font-family: 'Open Sans', sans-serif;
-	text-decoration: none;
-	background-color: #33ff99;
-	padding: 10px;
-	display: inline-block;
-	color: #ff00ff;
-	font-size: 16px;
+.post-header{
+	.post-title{
+		font-size: 3em;
+		margin: 10px 0 10px;
+	}
+	.post-meta{
+		color:#F5A623;
+		font-weight: bold;
+		margin-bottom:10px;
+	}
+}
+.post-content{
+	p{
+		padding: 12px;
+	}
 }
 
 /*  Ajustes para Responsive Design */
