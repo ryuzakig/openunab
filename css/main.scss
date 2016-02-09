@@ -5,15 +5,19 @@
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+$fuente-monse:    'Montserrat', sans-serif;
+$fuente-opensans: 'Open Sans', sans-serif;
+
 *{
 	margin: 0;
 	padding: 0;
 }
 h1,h2,h3{
-	font-family: 'Montserrat', sans-serif;
+	font-family: $fuente-monse;
 }
 p{
-	font-family: 'Open Sans', sans-serif;
+	font-family: $fuente-opensans;
 	font-weight: 300;
 }
 main section{
@@ -32,7 +36,6 @@ section#portada{
 	position: relative;
 	.informacion{
 		position: absolute;
-		// top: 50%;
 	  	left: 50%;
 	  	transform: translate(-50%, 20%);
 		text-align: center;
@@ -78,7 +81,7 @@ section#articulos{
 		margin-bottom: 5px;
 	}
 	a{
-		font-family: 'Open Sans', sans-serif;
+		font-family: $fuente-opensans;
 		text-decoration: none;
 		background-color: #33ff99;
 		padding: 10px;
@@ -95,7 +98,7 @@ section#articulos{
 		color:#869D9A;
 		font-size: 1em;
 		text-decoration: none;
-		font-family: 'Open Sans', sans-serif;
+		font-family: $fuente-opensans;
 	}
 	a:before{
 		content: "<<  ";
