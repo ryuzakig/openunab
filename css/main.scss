@@ -30,7 +30,7 @@ main section{
 	box-sizing: border-box;
 }
 section#portada{
-	background-image: url("../img/portrait_sm.jpg");
+	background-image: url("../img/portada.jpg");
 	background-size: cover;
 	height: 100vh;
 	position: relative;
@@ -43,11 +43,19 @@ section#portada{
 		h1{
 			font-size: 3em;
 			text-transform: uppercase;
+			a{
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+		p{
+			color:#ccc;
+			font-size: 18px;
 		}
 	}
 	.bienvenida{
 		height: 35%;
-		background-color:#fff;
+		background-color: #FAFAFA;
 		padding: 25px;
 		position: absolute;
 		bottom: 0;
@@ -128,14 +136,19 @@ section#articulos{
 }
 
 /*  Ajustes para Responsive Design */
-@media screen and (max-width:568px) {
+@media screen and (max-width:720px) {
 	main section{
 		width: 100%;
 	}
 	section#portada{
-		background-image: url("../img/portrait_sm.jpg");
-		background-size: cover;
 		height: 40vh;
-		position: relative;
+		.informacion{
+			h1{
+				font-size: 20px;
+			}
+		}
+		.bienvenida{
+			overflow: hidden;
+		}
 	}
 }
